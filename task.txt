@@ -1,0 +1,19 @@
+task 
+------
+ECS + EC2 instance + CI commands
+
+1) create image + push on ECR
+2) Create EC2 instance + install docker on ec2 & start service 
+3) Create pipeline (Build + Deploy using ECS)
+
+4) when code change pipeline re run and generate new docker image & re run image on container 
+code Build - generate new image & push to ecr 
+code Deploy - ec2 + re run container on same container image
+
+Push changes to git repo and new docker image should create and automatically deploy using CICD pipeline
+
+
+
+issue face
+----------------
+permission issue
