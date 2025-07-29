@@ -1,7 +1,11 @@
 #!/bin/bash
 
+echo 'before login'
+
 # Pull latest image from ECR
 aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 677674062026.dkr.ecr.ap-south-1.amazonaws.com
+
+echo 'login sucessfull'
 
 docker pull 677674062026.dkr.ecr.ap-south-1.amazonaws.com/docker-image-repository:latest
 
