@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-    res.status(200).send("Hello from ECS + farget + Docker + CI-CD Pipeline v3");
+    res.status(200).send("Hello from ECS + farget + Docker + CI-CD Pipeline v4");
 });
 
 app.listen(PORT, () => {
