@@ -16,7 +16,7 @@ phases:
       - echo Build completed on `date`
       - docker push 677674062026.dkr.ecr.ap-south-1.amazonaws.com/docker-image-repository:latest
 
-artifacts:
-  files: 
-  - 'appspec.yml'
-  - 'scripts/**'
+# artifacts:
+#   files: 
+#   # - 'appspec.yml'
+#   # - 'scripts/**'
