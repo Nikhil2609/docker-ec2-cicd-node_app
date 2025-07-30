@@ -15,10 +15,8 @@ phases:
     commands:
       - echo Build completed on `date`
       - docker push 677674062026.dkr.ecr.ap-south-1.amazonaws.com/docker-image-repository:latest
-      - echo Writing imagedefinitions.json conatiner name image URI file to deploy latest stage on code deploy stage...
-      - printf '[{"name":"node-container","imageUri":"677674062026.dkr.ecr.ap-south-1.amazonaws.com/docker-image-repository:latest"}]' > imagedefinitions.json
 
 artifacts:
   files: 
   - 'appspec.yml'
-  - 'scripts/**'
+  # - 'scripts/**'
